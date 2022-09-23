@@ -1,0 +1,32 @@
+[debug] [2022-09-13T07:36:39.357Z] ----------------------------------------------------------------------
+[debug] [2022-09-13T07:36:39.357Z] Command:       /usr/local/bin/node /Users/macbookairm1/.npm-global/bin/firebase serve
+[debug] [2022-09-13T07:36:39.358Z] CLI Version:   11.9.0
+[debug] [2022-09-13T07:36:39.358Z] Platform:      darwin
+[debug] [2022-09-13T07:36:39.358Z] Node Version:  v18.8.0
+[debug] [2022-09-13T07:36:39.358Z] Time:          Tue Sep 13 2022 00:36:39 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-09-13T07:36:39.359Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-13T07:36:39.418Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-13T07:36:39.419Z] > authorizing via signed-in user (corypham1@gmail.com)
+[debug] [2022-09-13T07:36:39.419Z] [iam] checking project cory-pham-website for permissions ["firebase.projects.get"]
+[debug] [2022-09-13T07:36:39.420Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cory-pham-website:testIamPermissions [none]
+[debug] [2022-09-13T07:36:39.420Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cory-pham-website:testIamPermissions x-goog-quota-user=projects/cory-pham-website
+[debug] [2022-09-13T07:36:39.420Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cory-pham-website:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-09-13T07:36:40.742Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cory-pham-website:testIamPermissions 200
+[debug] [2022-09-13T07:36:40.743Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cory-pham-website:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-09-13T07:36:40.744Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cory-pham-website [none]
+[debug] [2022-09-13T07:36:40.967Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cory-pham-website 200
+[debug] [2022-09-13T07:36:40.967Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cory-pham-website {"projectId":"cory-pham-website","projectNumber":"106608223046","displayName":"Cory Pham Website","name":"projects/cory-pham-website","resources":{"hostingSite":"cory-pham-website","realtimeDatabaseInstance":"cory-pham-website-default-rtdb"},"state":"ACTIVE","etag":"1_9f857db3-6b3a-45d8-af5a-1820e989291a"}
+[info] 
+[info] === Serving from '/Users/macbookairm1/Documents/VS Code/Cory Website backup'...
+[info] 
+[debug] [2022-09-13T07:36:40.973Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cory-pham-website/sites 
+[debug] [2022-09-13T07:36:41.525Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cory-pham-website/sites 200
+[debug] [2022-09-13T07:36:41.525Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cory-pham-website/sites {"sites":[{"name":"projects/cory-pham-website/sites/cory-pham-website","defaultUrl":"https://cory-pham-website.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-09-13T07:36:41.525Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cory-pham-website/webApps/-/config [none]
+[debug] [2022-09-13T07:36:42.998Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cory-pham-website/webApps/-/config 200
+[debug] [2022-09-13T07:36:42.998Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cory-pham-website/webApps/-/config {"projectId":"cory-pham-website","databaseURL":"https://cory-pham-website-default-rtdb.firebaseio.com","storageBucket":"cory-pham-website.appspot.com","apiKey":"AIzaSyBcN_wDWMO_wnEikn65aq1x0ngASQCn6dU","authDomain":"cory-pham-website.firebaseapp.com","messagingSenderId":"106608223046"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [13/Sep/2022:07:36:52 +0000] "GET /main.js HTTP/1.1" 404 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [13/Sep/2022:07:36:52 +0000] \"GET /main.js HTTP/1.1\" 404 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [13/Sep/2022:07:36:52 +0000] "GET /%3Cscript%20src= HTTP/1.1" 404 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [13/Sep/2022:07:36:52 +0000] \"GET /%3Cscript%20src= HTTP/1.1\" 404 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\""}}
